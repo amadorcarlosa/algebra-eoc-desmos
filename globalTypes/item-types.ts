@@ -25,6 +25,20 @@ export const QuestionExamples: QuestionOption[] = [
   }
 ];
 
+export const QuestionStemExample: QuestionStemType = {
+  questionText: 'What are the solutions to the equation',  
+  questionMath: {
+    latex: 'x^2 - 4 = 0',
+    plainText: 'x^2 - 4 = 0',
+    mathml: '<math><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mo>=</mo><mn>0</mn></math>'
+  }
+};
+export type QuestionStemType = {
+
+  questionText: string;
+  questionMath: MathContent;
+}
+
 export type QuestionOption = {
   label: string;
   text?: string | null;
